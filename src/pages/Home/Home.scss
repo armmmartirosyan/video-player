@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.video_wrapper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.show_video_button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
