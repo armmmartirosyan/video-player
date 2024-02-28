@@ -4,7 +4,8 @@
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "baseUrl": "src"
   },
-  "include": ["src/**/*"]
+  "include": ["src"]
 }

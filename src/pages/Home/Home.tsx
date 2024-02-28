@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
-import VideoItem from "../../components/VideoItem";
-import Controls from "../../components/Controls";
-import { VIDEO_URL_LIST } from "../../constants";
+import VideoItem from "components/VideoItem";
+import Controls from "components/Controls";
+import { VIDEO_URL_LIST } from "constants/index";
 import Button from "@mui/material/Button";
 import "./Home.scss";
 

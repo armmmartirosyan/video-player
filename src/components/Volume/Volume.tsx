@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import Slider from "@mui/material/Slider";
-import { playerProvider } from "../../providers/player-provider";
+import { playerProvider } from "providers/player-provider";
 
 export default function Volume() {
   const [volume, setVolume] = useState(1);

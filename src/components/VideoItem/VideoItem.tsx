@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
-import { playerProvider } from "../../providers/player-provider";
-import { Player_Event_Types, PLAYER_STATES } from "../../constants";
-import { VideoItemProps } from "../../types";
+import { playerProvider } from "providers/player-provider";
+import { Player_Event_Types, PLAYER_STATES } from "constants/index";
+import { VideoItemProps } from "types";
 import "./VideoItem.scss";
 
 const VideoItem: FC<VideoItemProps> = ({ url }) => {

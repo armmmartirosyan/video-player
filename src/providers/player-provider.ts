@@ -1,5 +1,5 @@
-import EventEmitter from "../helpers/event-emitter";
-import { Player_Event_Types, PLAYER_STATES } from "../constants";
+import EventEmitter from "helpers/event-emitter";
+import { Player_Event_Types, PLAYER_STATES } from "constants/index";
 
 class PlayerProvider {
   private bufferItems: string[] = [];

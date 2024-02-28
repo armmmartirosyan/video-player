@@ -2,9 +2,9 @@ import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import React, { useState } from "react";
-import { PLAYBACK_RATE_LIST } from "../../constants";
 import MenuItem from "@mui/material/MenuItem";
-import { playerProvider } from "../../providers/player-provider";
+import { PLAYBACK_RATE_LIST } from "constants/index";
+import { playerProvider } from "providers/player-provider";
 
 export default function PlaybackRate() {
   const [playbackRate, setPlaybackRate] = useState(1);

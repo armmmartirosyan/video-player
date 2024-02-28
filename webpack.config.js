@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 const LOADERS = [
   {
@@ -21,6 +22,13 @@ const PLUGINS = [
 module.exports = {
   entry: "./src/index.tsx",
   resolve: {
+    alias: {
+      components: path.resolve(__dirname, "src/components"),
+      constants: path.resolve(__dirname, "src/constants"),
+      providers: path.resolve(__dirname, "src/providers"),
+      helpers: path.resolve(__dirname, "src/helpers"),
+      types: path.resolve(__dirname, "src/types"),
+    },
     extensions: [".tsx", ".ts", ".js"],
   },
   module: {

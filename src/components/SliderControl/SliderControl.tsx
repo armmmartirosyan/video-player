@@ -1,7 +1,7 @@
 import Slider from "@mui/material/Slider";
 import React, { useEffect, useRef, useState } from "react";
-import { playerProvider } from "../../providers/player-provider";
-import { PLAYER_STATES, Player_Event_Types } from "../../constants";
+import { playerProvider } from "providers/player-provider";
+import { PLAYER_STATES, Player_Event_Types } from "constants/index";
 
 export default function SliderControl() {
   const [sliderValue, setSliderValue] = useState(0);

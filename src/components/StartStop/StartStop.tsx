@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import StopCircleIcon from "@mui/icons-material/StopCircle";
-import { playerProvider } from "../../providers/player-provider";
-import { PLAYER_STATES, Player_Event_Types } from "../../constants";
+import { playerProvider } from "providers/player-provider";
+import { PLAYER_STATES, Player_Event_Types } from "constants/index";
 
 export default function StartStop() {
   const [isPlaying, setIsPlaying] = useState(false);
