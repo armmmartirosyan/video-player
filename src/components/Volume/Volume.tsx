@@ -3,6 +3,7 @@ import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import Slider from "@mui/material/Slider";
 import { playerProvider } from "providers/player-provider";
+import "./Volume.scss";
 
 export default function Volume() {
   const [volume, setVolume] = useState(1);
@@ -43,8 +44,8 @@ export default function Volume() {
       <div className="volume_slider_container">
         <Slider
           onChange={handleChangeVolume}
-          aria-label="Volume"
           value={volume * 100}
+          aria-label="Volume"
           max={100}
           min={0}
         />

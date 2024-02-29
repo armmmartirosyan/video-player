@@ -1,5 +1,5 @@
-import Slider from "@mui/material/Slider";
 import React, { useEffect, useRef, useState } from "react";
+import Slider from "@mui/material/Slider";
 import { playerProvider } from "providers/player-provider";
 import { PLAYER_STATES, Player_Event_Types } from "constants/index";
 
@@ -73,11 +73,11 @@ export default function SliderControl() {
 
   return (
     <Slider
-      size="small"
       min={0}
-      max={playerProvider.theShortestVideoLength}
+      size="small"
       value={sliderValue}
       onChange={handleJump}
+      max={playerProvider.theShortestVideoLength}
     />
   );
 }

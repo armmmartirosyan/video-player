@@ -1,8 +1,8 @@
 import React from "react";
-import PlaybackRate from "../PlaybackRate";
-import Volume from "../Volume";
-import StartStop from "../StartStop";
 import SliderControl from "../SliderControl";
+import PlaybackRate from "../PlaybackRate";
+import StartStop from "../StartStop";
+import Volume from "../Volume";
 import "./Controls.scss";
 
 export default function Controls() {

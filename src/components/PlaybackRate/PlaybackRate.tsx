@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import React, { useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import { PLAYBACK_RATE_LIST } from "constants/index";
 import { playerProvider } from "providers/player-provider";
@@ -11,7 +11,6 @@ export default function PlaybackRate() {
 
   const handlePlaybackRateChange = (e: SelectChangeEvent<number>) => {
     const value = Number(e.target.value) || 1;
-
     playerProvider.setPlaybackRate(value);
 
     setPlaybackRate(value);
@@ -19,11 +18,11 @@ export default function PlaybackRate() {
 
   return (
     <FormControl>
-      <InputLabel id="demo-simple-select-label">Speed</InputLabel>
+      <InputLabel id="playback-rate-label">Speed</InputLabel>
       <Select
         onChange={handlePlaybackRateChange}
-        labelId="demo-simple-select-label"
-        id="demo-simple-select"
+        labelId="playback-rate-label"
+        id="playback-rate-select"
         value={playbackRate}
         label="Speed"
       >
